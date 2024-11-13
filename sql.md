@@ -1,21 +1,15 @@
-# farmacia-in-php has sql injection vulnerability
+# farmacia-in-php has sql injection vulnerability in editar-produto.php
 
 ## supplier
 https://code-projects.org/farmacia-in-php-css-javascript-and-mysql-free-download/
 ## Vulnerability file
 editar-produto.php
 ## describe
-There is an unauthorized SQL injection vulnerability in  cupon-fiscal.php of farmacia-in-php-system.
-
-Control parameter: **$GET['id']**
-
- The information of the database can be obtained without authorization, and arbitrary commands may be executed. 
-
-
+There is an unauthorized SQL injection vulnerability in  editar-produto.php of farmacia-in-php.The information of the database can be obtained without authorization.
 
 ## code analysis
 
-The **$_GET['id']** parameter in editar-produto.php is controlled and is directly carried into the SQL statement for execution, resulting in SQL injection.
+The **id** parameter in editar-produto.php is controlled and is directly carried into the SQL statement for execution, resulting in SQL injection.
 
 ![image-20241113142150613](https://github.com/user-attachments/assets/8a465118-a43e-4db0-97ac-b9fbac718554)
 
